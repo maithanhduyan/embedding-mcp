@@ -1,0 +1,26 @@
+[project]
+name = "embedding-mcp"
+version = "0.1.0"
+description = "Embedding MCP"
+
+authors = [{"name" = "Mai Thành Duy An", "email" = "tiachop0102@gmai.com"}]
+
+requires-python = ">=3.12"
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "PyJWT",
+    "python-multipart>=0.0.20",
+    "requests",
+]
+
+[project.scripts]
+embedding-mcp = "app.main:main"
+
+[tools.setuptools]
+packages = ["app"]
+
+[build-system]
+requires = ["setuptools" , "wheel"]
+build-backend = "setuptools.build_meta"
